@@ -175,7 +175,6 @@ form .login {
     width: 38vw;
     height: 20vh;
     font-family: norse;
-    font-size: 5.5rem;
     color: aliceblue;
     padding: 5px 0;
     background-color: rgba(44, 39, 39, 0.484);
@@ -184,4 +183,5 @@ form .login {
 .odin-text {
     display: flex;
     align-items: center;
+    font-size: 5.5rem;
 }
