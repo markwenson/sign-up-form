@@ -1,0 +1,187 @@
+@font-face {
+    src: url(assets/Norse-Bold.otf);
+    font-family: norse;
+}
+
+@import url("/reset.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 98vh;
+    width: 98vw;
+    padding: 0px 1rem 0px 1rem;
+    background-color: #f5f3f1;
+}
+
+section.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    height: 96vh;
+    width: 40vw;
+    background: url(./assets/halie-west--unsplash.jpg) no-repeat center;
+    background-size: cover;
+    /* border: 1px solid red; */
+}
+
+.img-description {
+    font-family: 'Cormorant SC', serif;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px rgb(228, 224, 220);
+    /* border: 1px solid palevioletred; */
+}
+
+.img-description a {
+    color: inherit;
+}
+
+img-info a:hover {
+    cursor: pointer;
+}
+
+section.form {
+    overflow: auto;
+    width: 58vw;
+    margin: 0;
+    padding-top: 5%;
+    margin-top: 0; 
+    font-family: 'Cormorant SC', serif;
+    font-size: 1rem;
+    /* border: 1px solid rgb(68, 0, 255); */
+}
+
+section.form > * {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section .form-label {
+    font-weight: 800;
+    font-size: 1rem;
+    color: inherit;
+    display: block;
+    transition: all 500ms;
+    transform: translateY(-3.2rem);
+    /* border: 1px solid rgb(128, 0, 58); */
+}   
+
+form {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    margin-left: 0%;
+    background-color: rgba(169, 169, 187, 0.196);
+    box-shadow: 0.2rem 0.3rem 0.4rem rgba(107, 99, 99, 0.293);
+    /* border: 2px solid #333; */
+}
+
+.form-input {
+    border: 2px solid rgba(20, 83, 90, 0.662);
+    color: #333;
+    font-size: 1rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 500ms;
+    margin-top: 4%;
+}
+
+.form-input:focus {
+    transition: 300ms;
+    outline: none;
+    border: 2px solid #71ed0b;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgb(125, 146, 119);
+}
+
+.form-input:placeholder-shown + .form-label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+    /* border: 2px solid rgb(224, 236, 8); */
+}
+
+.inputs > :last-child {
+    padding-left: 20%;
+}
+
+form h1 {
+    margin-bottom: 1.8rem;
+    margin-top: 0.6rem;
+}
+
+form .end-form {
+    margin-top: 1rem;
+    position: absolute;
+}
+
+.end-form h1 {
+    font-size: 1.2rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(52, 141, 113, 0.804);
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0.8rem 0.8rem;
+    color: white;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgb(168, 166, 163);
+    touch-action: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: 170ms;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 1rem 0;
+}
+
+form .login {
+    color: #00b01a;
+    text-decoration: none;
+}
+
+
+.odin-logo-div {
+    position: absolute;
+    top: 35vh;
+    display: flex;
+    justify-content: center;
+    width: 38vw;
+    height: 20vh;
+    font-family: norse;
+    font-size: 5.5rem;
+    color: aliceblue;
+    padding: 5px 0;
+    background-color: rgba(44, 39, 39, 0.484);
+}
+
+.odin-text {
+    display: flex;
+    align-items: center;
+}
